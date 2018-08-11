@@ -20,12 +20,21 @@ compile project(':react-native-cabin-bluetooth-serial')
 4、在MainApplication.java里注册组件
 
 import com.cabin.CRCTBluetoothSerial.CRCTBluetoothSerialPackage;
+
 @Override
+
 protected List<ReactPackage> getPackages() {
+
   return Arrays.<ReactPackage>asList(
+
       new MainReactPackage(),
+
         new RCTToastPackage(),
+
           new CRCTBluetoothSerialPackage()
+
   );
+
 }
+
 
