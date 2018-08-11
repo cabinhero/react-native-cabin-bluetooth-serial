@@ -1,4 +1,5 @@
-react-native-cabin-bluetooth-serial
+react-native-cabin-bluetooth-serial修改自react-native-bluetooth-serial，使其支持react-native@0.55.4,react@16.3.1,
+
 
 项目中引用
 
