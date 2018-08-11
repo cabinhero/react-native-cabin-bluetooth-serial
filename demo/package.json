@@ -1,0 +1,28 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start -- --reset-cache",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@remobile/react-native-toast": "^1.0.7",
+    "buffer": "^4.6.0",
+    "eslint": "^4.0.0",
+    "iconv-lite": "^0.4.13",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-cabin-bluetooth-serial": "https://github.com/cabinhero/react-native-cabin-bluetooth-serial.git",
+    "stream": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.2",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "23.4.2",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
