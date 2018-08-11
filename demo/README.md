@@ -1,30 +1,13 @@
-react-native-cabin-bluetooth-serial
+Demo应用说明：
 
-项目中引用
+1、需要安装react-native-toast插件，git地址
+https://github.com/remobile/react-native-toast
 
-1、在package.json中添加：
+2、运行时出错：
+Native module Toast tried to override Toast for module.....
 
-"react-native-cabin-bluetooth-serial": "https://github.com/cabinhero/react-native-cabin-bluetooth-serial.git",
-
-2、在settings.gradle里添加
-
-include ':react-native-cabin-bluetooth-serial'
-
-project(':react-native-cabin-bluetooth-serial').projectDir = new File(settingsDir, '../node_modules/react-native-cabin-bluetooth-serial')
-
-3、在app的build.gradle里添加
-
-compile project(':react-native-cabin-bluetooth-serial')
-
-4、在MainApplication.java里注册组件
-
-import com.cabin.CRCTBluetoothSerial.CRCTBluetoothSerialPackage;
+解决办法：在com.remobile.toast.Toast.java里添加下列代码
 @Override
-protected List<ReactPackage> getPackages() {
-  return Arrays.<ReactPackage>asList(
-      new MainReactPackage(),
-        new RCTToastPackage(),
-          new CRCTBluetoothSerialPackage()
-  );
-}
-
+    public boolean canOverrideExistingModule() {
+        return true;
+    }
