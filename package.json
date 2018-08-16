@@ -6,6 +6,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabinhero/react-native-cabin-bluetooth-serial.git"
+  },
+  "keywords": [
+    "bluetooth",
+    "react-native",
+    "weight",
+    "print"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cabinhero/react-native-cabin-bluetooth-serial/issues"
+  },
+  "homepage": "https://github.com/cabinhero/react-native-cabin-bluetooth-serial#readme",
   "dependencies": {
     "buffer": "^4.6.0"
   }
